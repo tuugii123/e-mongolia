@@ -1,0 +1,354 @@
+<html lang="en">
+	<title>ДАН | Танилт нэвтрэлтийн систем</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="https://sso.gov.mn/static/assets/img/iconLogo.ico">
+		<!-- library -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+	
+		<link href="/static/assets/css/fonts.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+		<!-- Popovers -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://sso.gov.mn/static/css/jquery.toast.css">
+		<!-- Font size customize -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+		<!-- Line height customize -->
+		<script src="https://cdn.tiny.cloud/1/qagffr3pkuv17a8on1afax661irst1hbr4e6tbv888sz91jc/tinymce/5/tinymce.min.js"></script>
+		<!-- own -->
+		<link rel="stylesheet" href="https://sso.gov.mn/static/assets/css/style.css">
+		<link rel="stylesheet" href="https://sso.gov.mn/static/assets/css/responsive.css">
+	
+		<title>ДАН | Танилт нэвтрэлтийн систем</title>
+	</head>
+	<body class = "light-theme">
+		<header>
+			<nav class="header">
+				<ul class="nav justify-content-center">
+					<li>
+						<div class="btn-group">
+							<button class="switcher btn dropdown-toggle custom-btn" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+								
+									Хэл сонгох
+								
+							</button>
+							<ul class="dropdown-menu defaultDropdown" aria-labelledby="defaultDropdown" style="">
+								<li><a href="/language/mn">Монгол</a></li>
+								<li><a href="/language/en">English</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<button class="nav-link custom-btn text-decoration-none md-design" href="#" tabindex="-1" aria-disabled="true" onclick="darkMode()" style="border: none"><img id="isDarkMode" src="sun.svg" style="padding-right: 5px;"><span id="darkModeValue">Өдрийн горим</span></button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<script>
+
+			function darkMode() {
+				var dark = document.getElementById('isDarkMode');
+				let danImg = document.getElementById('danImg');
+				var nameValue = document.getElementById('darkModeValue');
+				var night = 'Шөнийн горим';
+				var day = 'Өдрийн горим';
+		
+				document.body.classList.toggle("dark-theme");
+		
+				if (document.body.classList.contains("dark-theme")) {
+					dark.src = 'https://sso.gov.mn/static/assets/img/moon.svg';
+					danImg.src = 'https://sso.gov.mn/static/assets/img/dark-logo.webp';
+					nameValue.innerText = night;
+				} else {
+					dark.src = 'https://sso.gov.mn/static/assets/img/sun.svg';
+					danImg.src = 'https://sso.gov.mn/static/assets/img/light-logo.webp';
+					nameValue.innerText = day;
+				}
+			};
+		</script>
+		<section>
+			<div class="container-fluid">
+				<div id="main" class="row d-flex align-items-center justify-content-center">
+					<div class="col-lg-6 col-md-12 col-sm-10 left-section position-relative">
+						<div class="d-flex align-items-center justify-content-center dann">
+							<img id="danImg" src="https://sso.gov.mn/static/assets/img/light-logo.webp" alt="Dan_logo_lightmode">
+							<p class="dan-text">Танилт нэвтрэлтийн<br> систем</p>
+						</div>
+					</div>
+		
+					
+		
+			<!-- Нэвтрэх хэсэг -->
+			<div id="login" class="col-lg-6 col-md-14 col-sm-12 d-flex justify-content-center">
+				<div class="form">
+					<div class="tagNav">
+						<a href="https://sso.gov.mn/login?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" style="border-top-left-radius: 20px;" class="active">Иргэн</a>
+						<a href="https://sso.gov.mn/login/organization?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==">Байгууллага</a>
+						<a href="https://sso.gov.mn/login/foreign?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" style="border-top-right-radius: 20px;">Foreigner</a>
+					</div>
+					<div id="ct" class="tab-content custom-card-wrapper back shadow-none">
+						<!-- Иргэн нэтрэх -->
+						<div class="tab-pane fade show active shadow-none" id="citizen" role="tabpanel" aria-labelledby="pill-citizen-tab">
+							<div class="newtreh">
+								<a href="#" class="activePage">Нэвтрэх</a>
+								<a href="https://sso.gov.mn/register?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==">Бүртгүүлэх</a>
+							</div>
+							<div class="headerTitle">
+								<h2 class="title-1" aria-label="Нэвтрэх" tabindex="0">Нэвтрэх</h2>
+							</div>
+							<div class="btns mb-3 tabs">
+								<a class="btn active-tab" id="otp"><img src="https://sso.gov.mn/static/assets/img/Mail.svg"> Нэг удаагийн кодоор</a>
+								<a href="https://sso.gov.mn/login_bank?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" class="btn tab">Банкны эрх</a>
+								<a href="https://sso.gov.mn/login_signature?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" class="btn tab">Тоон гарын үсэг</a>
+							</div>
+		
+							<div class="form-check form-switch">
+								<input class="form-check-input" type="checkbox" id="checkRegNo" onclick="isCheck()" checked="">
+								<label for="checkRegNo" class="form-check-label text-decoration-none" style="color: #637DAA;">Регистрийн дугаараар нэвтрэх</label>
+							</div>
+							<div class="form-check form-switch">
+								<input class="form-check-input" type="checkbox" id="checkBurgtel" onclick="isCheck1()">
+								<label for="checkBurgtel" class="form-check-label text-decoration-none" style="color: #637DAA;">Бүртгэлийн дугаараар нэвтрэх
+									<span id="myTooltip" type="button" class="" data-toggle="tooltip" data-bs-html="true" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="" data-bs-original-title="Бүртгэлийн дугаар нь иргэн таны 12 орон бүхий бүртгэлийн дугаар юм.  <img src='/static//assets/img/citizen-identity.png' id='citizen-identity' >">
+										<img src="https://sso.gov.mn/static/assets/img/Circle_Question.svg" style="width: 15px;">
+									</span>
+								</label>
+							</div>
+		
+							<form action="/login?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" id="formInput" method="POST">
+								
+									
+									<div class="form-group mt-3 mb-3 flexRegister" id="regNoo">
+										<input type="hidden" id="regnum" name="regnum">
+											<div class="rd1" id="r">Р</div>
+											<div class="rd2" id="d">Д</div>
+											<!-- Mobile Alphabet -->
+											<div class="rd1" id="m1" data-bs-toggle="modal" href="#alphabetModal" role="button" data-target="#alphabetModal">Р
+											</div>
+											<div class="rd2" id="m2" data-bs-toggle="modal" href="#alphabetModal" role="button" data-target="#alphabetModal">Д
+											</div>
+											<input type="tel" class="form-control inputStyle" id="regNo" aria-describedby="emailHelp" placeholder="Дугаар" value="">
+									</div>
+									<div class="form-group mt-3 mb-3" id="orgNoo">
+										<input name="civil_id" type="tel" class="form-control inputStyle" id="orgNo" aria-describedby="emailHelp" value="" placeholder="Бүртгэлийн дугаар /12 орон бүхий дугаар 11**********/">
+									</div>
+		
+									
+		
+									<div id="form-pass" class="form-group mb-3 form-pass">
+										<input name="password" type="password" class="form-control inputStyle" id="pass" placeholder="Нууц үг" required="">
+										<img src="https://sso.gov.mn/static/assets/img/Eye.svg" id="togglePassword" class="togglePassword" onclick="eyeToggler()" alt="Eye icon">
+									</div>
+		
+									
+		
+								
+		
+								
+									
+								
+		
+								
+									
+								
+		
+								<!-- Forget password -->
+								<div>
+									<img src="https://sso.gov.mn/static/assets/img/Circle_Question.svg" style="width: 15px;">
+									<a href="https://sso.gov.mn/forgot/password?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" class="text-decoration-none linkText blueText" alt="Circle question">Нууц үгээ мартсан уу?</a>
+								</div>
+								<!-- Change phone number -->
+								<div>
+									<img src="https://sso.gov.mn/static/assets/img/Mobile.svg" style="width: 15px;" alt="Mobile icon">
+									<a href="https://sso.gov.mn/change/phone?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" class="text-decoration-none linkText blueText">Бүртгэлтэй утасны дугаараа солих</a>
+								</div>
+								<!-- Login button -->
+								<div class="mt-4 mb-4">
+									<button type="button" id="login-button" class="btn-cus btn btn-primary btn-lg">Нэвтрэх</button>
+								</div>
+							</form>
+		
+							<!-- Alphabet Letters -->
+		<div id="alphabet" class="loginAlphabet">
+			<h5 id="reghead" class="regHeader">РД эхний үсгээ сонгоно уу</h5>
+			<div class="alphabetList">
+				<p class="item">А</p>
+				<p class="item">Б</p>
+				<p class="item">В</p>
+				<p class="item">Г</p>
+				<p class="item">Д</p>
+				<p class="item">Е</p>
+				<p class="item">Ё</p>
+				<p class="item">Ж</p>
+				<p class="item">З</p>
+				<p class="item">И</p>
+				<p class="item">Й</p>
+				<p class="item">К</p>
+				<p class="item">Л</p>
+				<p class="item">М</p>
+				<p class="item">Н</p>
+				<p class="item">О</p>
+				<p class="item">Ө</p>
+				<p class="item">П</p>
+				<p class="item">Р</p>
+				<p class="item">С</p>
+				<p class="item">Т</p>
+				<p class="item">У</p>
+				<p class="item">Ү</p>
+				<p class="item">Ф</p>
+				<p class="item">Х</p>
+				<p class="item">Ц</p>
+				<p class="item">Ч</p>
+				<p class="item">Ш</p>
+				<p class="item">Щ</p>
+				<p class="item">Ъ</p>
+				<p class="item">Ы</p>
+				<p class="item">Ь</p>
+				<p class="item">Э</p>
+				<p class="item">Ю</p>
+				<p class="item">Я</p>
+			</div>
+		</div>
+		
+							<div id="bottomBtns" class="btns mb-3 tabs">
+								<p style="text-align: center;">Эсвэл</p>
+								<a href="https://sso.gov.mn/login_bank?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" class="btn tab">Банкны эрхээр нэвтрэх</a>
+								<a href="https://sso.gov.mn/login_signature?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" class="btn tab">Тоон гарын үсгээр нэвтрэх</a>
+							</div>
+		
+							<!-- Register -->
+							<div class="text-center">
+								<a href="https://sso.gov.mn/register?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" id="register" class="fw-normal text-decoration-none" style="color: #637DAA;">Шинээр бүртгүүлэх үү?</a>
+							</div>
+		
+						</div>
+						<!-- Байгууллага нэтрэх -->
+						<div class="tab-pane fade" id="organization" role="tabpanel" aria-labelledby="pill-org-tab">
+							<div>
+								<h2 class="title-1">Нэвтрэх</h2>
+							</div>
+							<div class="btns mb-4 d-flex justify-content-start tabs">
+								<a class="btn active-tab"><img src="https://sso.gov.mn/static/assets/img/flash.png"> Тоон гарын үсгээр</a>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+								<label class="form-check-label" for="exampleRadios1">
+									Тоон гарын үсэг <a href="https://ra.datacenter.gov.mn/software/installer">(Тоон гарын үсгийн клиент програм татах)</a>
+								</label>
+							</div>
+							<div>
+								<form id="formInput1">
+									<div class="form-group mt-3">
+										<input type="text" class="form-control inputStyle" id="regNo1" aria-describedby="emailHelp" placeholder="Регистрийн дугаар">
+									</div>
+								</form>
+							</div>
+							<div class="mt-4 mb-4">
+								<button type="button" class="btn-cus btn btn-primary btn-lg ">Нэвтрэх</button>
+							</div>
+						</div>
+						<!-- Гадаад хүн нэвтрэх -->
+						<div class="tab-pane fade" id="foreigner" role="tabpanel" aria-labelledby="pill-foreigner-tab">
+							<div>
+								<h2 class="title-1">Нэвтрэх</h2>
+							</div>
+							<div class="btns mb-4 d-flex justify-content-start tabs">
+								<a class="btn active-tab"><img src="https://sso.gov.mn/static/assets/img/Mail.svg"> Via OTP</a>
+								<!-- <a href="/static/assets/pages/bank.html" class="btn tab">Банкны эрх</a>
+								<a href="/static/assets/pages/toon.html" class="btn tab">Тоон гарын үсэг</a> -->
+							</div>
+							<div>
+								<form id="formInput2">
+									<div class="form-group mt-3">
+										<input type="text" class="form-control inputStyle" id="regNoF" aria-describedby="emailHelp" placeholder="F registration number">
+									</div>
+									<div class="form-group mt-3 mb-3">
+		
+										<input type="password" class="form-control inputStyle" id="passF" placeholder="Password">
+									</div>
+								</form>
+							</div>
+							<div>
+								<img src="https://sso.gov.mn/static/assets/img/Circle_Question.svg" style="width: 15px;">
+								<a href="#" class="fw-normal text-decoration-none" alt="Circle question" style="color: #637DAA;">Нууц үгээ мартсан уу?</a>
+							</div>
+							<div class="mt-4 mb-4">
+								<button type="button" class="btn-cus btn btn-primary btn-lg ">Нэвтрэх</button>
+							</div>
+							<div class="text-center">
+								<a href="https://sso.gov.mn/register?response_type=code&amp;client_id=e859507cb6753191fdc5e603-6eca8a874580cb019c762145b232684e&amp;scope=W3sid3NkbCI6Imh0dHBzOi8veHlwLmdvdi5tbi9jaXRpemVuLTEuMy4wL3dzP1dTREwiLCJzZXJ2aWNlcyI6WyJXUzEwMDEwMV9nZXRDaXRpemVuSURDYXJkSW5mbyJdfV0=&amp;redirect_uri=https://sso.e-mongolia.mn/sso-api/sso/access-grant&amp;state=eyJhY3Rpb24iOiJMT0dJTiIsInV1aWQiOiIxODliMDI2ZC1iNzljLTQ1YWQtOTlmMi0yODlmOWE1ZGU5ZDQtMTY5NDM2NjE4MTYwOSIsImxvbmciOmZhbHNlfQ==" id="register" class="fw-normal text-decoration-none" style="color: #637DAA;">Шинээр бүртгүүлэх</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<!-- Alphanbet Modal for mobile -->
+		<div class="modal fade loginAlphabet" id="alphabetModal" aria-hidden="true" aria-labelledby="alphabetModal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" style="z-index: 2000 !important;">
+				<div class="modal-content" style="z-index: 99999px !important; position: fixed; bottom: 0; left: 0; right: 0;">
+					<div class="modal-body">
+						<div id="alphabet1">
+							<h5 id="reghead" class="regHeader">РД эхний үсгээ сонгоно уу</h5>
+							<div class="alphabetList">
+								<p class="item">А</p>
+								<p class="item">Б</p>
+								<p class="item">В</p>
+								<p class="item">Г</p>
+								<p class="item">Д</p>
+								<p class="item">Е</p>
+								<p class="item">Ё</p>
+								<p class="item">Ж</p>
+								<p class="item">З</p>
+								<p class="item">И</p>
+								<p class="item">Й</p>
+								<p class="item">К</p>
+								<p class="item">Л</p>
+								<p class="item">М</p>
+								<p class="item">Н</p>
+								<p class="item">О</p>
+								<p class="item">Ө</p>
+								<p class="item">П</p>
+								<p class="item">Р</p>
+								<p class="item">С</p>
+								<p class="item">Т</p>
+								<p class="item">У</p>
+								<p class="item">Ү</p>
+								<p class="item">Ф</p>
+								<p class="item">Х</p>
+								<p class="item">Ц</p>
+								<p class="item">Ч</p>
+								<p class="item">Ш</p>
+								<p class="item">Щ</p>
+								<p class="item">Ъ</p>
+								<p class="item">Ы</p>
+								<p class="item">Ь</p>
+								<p class="item">Э</p>
+								<p class="item">Ю</p>
+								<p class="item">Я</p>
+							</div>
+							<div data-bs-dismiss="modal" aria-label="Close" class="closeModal">Хаах</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+					<p class="hidden" id="dark_mode" data-dark="None" data-mobile="None"></p>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
